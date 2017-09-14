@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="Pske-Helper_Jpa">
+		<jta-data-source>jdbc/Pske_Dev</jta-data-source>
+		<class>model.Call</class>
+		<class>model.CallPhase</class>
+		<class>model.CallPhaseEnum</class>
+		<class>model.CheckPoint</class>
+		<class>model.CheckPointCategory</class>
+		<class>model.CheckPointGroup</class>
+		<class>model.DynamicCheckPoint</class>
+		<class>model.DynamicCheckPointPK</class>
+		<class>model.FundingSource</class>
+	</persistence-unit>
+</persistence>
