@@ -4,4 +4,13 @@
   <welcome-file-list>
     <welcome-file>/index.html</welcome-file>
   </welcome-file-list>
-</web-app>
+  <servlet>
+    <servlet-name>Check Points Servlet</servlet-name>
+    <servlet-class>javax.faces.webapp.FacesServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Check Points Servlet</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+</web-app> 
