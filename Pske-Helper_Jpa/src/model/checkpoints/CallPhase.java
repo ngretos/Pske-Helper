@@ -1,4 +1,4 @@
-package model;
+package model.checkpoints;
 
 import java.io.Serializable;
 import javax.persistence.*;

@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import demo.DemoBean;
-import model.Call;
+import checkpoints.DemoBean;
+import model.checkpoints.Call;
 
 /**
  * Servlet implementation class demo

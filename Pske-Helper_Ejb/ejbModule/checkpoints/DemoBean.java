@@ -1,4 +1,4 @@
-package demo;
+package checkpoints;
 
 import java.util.List;
 
@@ -8,7 +8,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 
-import model.Call;
+import model.checkpoints.Call;
 
 /**
  * Session Bean implementation class demoBean
