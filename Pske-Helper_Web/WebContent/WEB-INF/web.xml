@@ -32,5 +32,9 @@
     <servlet-name>Check Points Servlet</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
+<<<<<<< HEAD
+</web-app> 
+>>>>>>> refs/remotes/origin/master
+=======
 </web-app> 
 >>>>>>> refs/remotes/origin/master
