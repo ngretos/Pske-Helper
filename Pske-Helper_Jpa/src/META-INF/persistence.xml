@@ -3,7 +3,4 @@
 	<persistence-unit name="Pske-Helper_Jpa">
 		<jta-data-source>jdbc/Pske_Dev</jta-data-source>
 	</persistence-unit>
-	<persistence-unit name="Pske-Helper_Jpa2">
-		<jta-data-source>jdbc/Pske_Dev2</jta-data-source>
-	</persistence-unit>
 </persistence>
