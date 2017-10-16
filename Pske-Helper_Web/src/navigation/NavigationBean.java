@@ -16,14 +16,14 @@ public class NavigationBean {
 	
 	public static final String HOME_PAGE = "Home.xhtml";
 
-	private String page;
+	private String page = MAIN_PAGE;
 
 	public String getMainPage()
 	{
 		return MAIN_PAGE;
 	}
 
-	public String getPageURL(String menuId) {
+	public String doNav(String menuId) {
 		
 		switch (menuId) {
 		case "CallPhases":
@@ -34,26 +34,7 @@ public class NavigationBean {
 			return "Check Points/CheckPoints.xhtml";
 
 		default:
-			return MAIN_PAGE;
-		}
-
-	}
-	
-	public void doNav(String menuId) {
-		
-		switch (menuId) {
-		case "CallPhases":
-			this.page = "CallPhases.xhtml";
-			break;
-		case "Users":
-			this.page = "Users.xhtml";
-			break;
-		case "CheckPoints":
-			this.page = "Check Points/CheckPoints.xhtml";
-			break;
-
-		default:
-			this.page = HOME_PAGE;
+			return "Check Points/CheckPoints.xhtml";//HOME_PAGE;
 		}
 
 	}
