@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
     <wb-module deploy-name="Pske-Helper_Ear">
         <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
-        <dependent-module archiveName="primefaces-6.1.jar" deploy-path="/lib" handle="module:/classpath/var/PRIME_FACES">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
-        <dependent-module archiveName="Pske-Helper_Web.war" deploy-path="/" handle="module:/resource/Pske-Helper_Web/Pske-Helper_Web">
-            <dependent-object/>
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
         <dependent-module archiveName="Pske-Helper_Jpa.jar" deploy-path="/lib" handle="module:/resource/Pske-Helper_Jpa/Pske-Helper_Jpa">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <dependent-module archiveName="Pske-Helper_Ejb.jar" deploy-path="/" handle="module:/resource/Pske-Helper_Ejb/Pske-Helper_Ejb">
             <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="Pske-Helper_Web.war" deploy-path="/" handle="module:/resource/Pske-Helper_Web/Pske-Helper_Web">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="primefaces-6.1.jar" deploy-path="/lib" handle="module:/classpath/lib/D:/Storage_001/Development/j2ee/UI Frameworks/PrimeFaces (JSF)/primefaces-6.1.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
     </wb-module>

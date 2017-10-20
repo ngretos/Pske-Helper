@@ -4,3 +4,5 @@
 /org.eclipse.wst.jsdt.ui.superType.container
 /org.eclipse.wst.jsdt.ui.superType.name
 /oracle.eclipse.tools.glassfish.syslib.xml
+/org.eclipse.wst.common.project.facet.core.xml
+/org.eclipse.wst.ws.service.policy.prefs
