@@ -8,10 +8,7 @@
             <dependent-object/>
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="Pske-Helper_Web.war" deploy-path="/" handle="module:/resource/Pske-Helper_Web/Pske-Helper_Web">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
-        <dependent-module archiveName="primefaces-6.1.jar" deploy-path="/lib" handle="module:/classpath/lib/D:/Storage_001/Development/j2ee/UI Frameworks/PrimeFaces (JSF)/primefaces-6.1.jar">
+        <dependent-module archiveName="primefaces-6.1.jar" deploy-path="/lib" handle="module:/classpath/var/PRIME_FACES">
             <dependency-type>uses</dependency-type>
         </dependent-module>
     </wb-module>
