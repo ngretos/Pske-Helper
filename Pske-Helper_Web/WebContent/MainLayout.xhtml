@@ -14,17 +14,17 @@
 		<h:form>
 			<p:menu toggleable="true">
 				<p:submenu label="Management">
-					<p:menuitem value="Call Phases" actionListener ="#{navigationBean.doNav('CallPhases')}" update="WorkingArea"/>
-					<p:menuitem value="Users" actionListener ="#{navigationBean.doNav('Users')}" update="WorkingArea"/>
-					<p:menuitem value="Check Points" actionListener="#{navigationBean.doNav('CheckPoints')}" update="WorkingArea" />
+					<p:menuitem value="Call Phases" actionListener ="#{navigationBean.doNav('CallPhases')}" update="Content"/>
+					<p:menuitem value="Users" actionListener ="#{navigationBean.doNav('Users')}" update="Content"/>
+					<p:menuitem value="Check Points" actionListener="#{navigationBean.doNav('CheckPoints')}" update="Content" />
 				</p:submenu>
 			</p:menu>
 		</h:form>
 	</p:layoutUnit>
 	<p:layoutUnit position="south" size="50"></p:layoutUnit>
-	<p:layoutUnit position="center" id="WorkingArea">
+	<p:layoutUnit position="center" id="Content">
 		<ui:insert>
-			<ui:include src="#{navigationBean.page}" />
+			<ui:include src="#{navigationBean.doNav('')}"/>
 		</ui:insert>
 	</p:layoutUnit>
 

@@ -1,4 +1,4 @@
-package checkpoints;
+package call;
 
 import java.util.List;
 
@@ -18,13 +18,13 @@ import model.checkpoints.Call;
 @Stateless
 @LocalBean
 @TransactionManagement (TransactionManagementType.CONTAINER)
-public class DemoBean {
+public class CallDataService {
 
 	@PersistenceContext(unitName="Pske-Helper_Jpa") private EntityManager em;
     /**
      * Default constructor. 
      */
-    public DemoBean() {
+    public CallDataService() {
     }
     
     public List<Call> getCalls()

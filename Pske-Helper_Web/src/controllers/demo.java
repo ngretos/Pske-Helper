@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import checkpoints.DemoBean;
+import call.CallDataService;
 import model.checkpoints.Call;
 
 /**
@@ -20,7 +20,7 @@ import model.checkpoints.Call;
 public class demo extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-	private @EJB (name = "DemoBean") DemoBean dbean;
+	private @EJB (name = "DemoBean") CallDataService dbean;
 
 	/**
      * @see HttpServlet#HttpServlet()

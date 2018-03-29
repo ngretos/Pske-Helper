@@ -12,11 +12,11 @@ import javax.faces.bean.ManagedBean;
 @ManagedBean
 public class NavigationBean {
 	
-	public static final String MAIN_PAGE = "MainLayout.xhtml";
-	
 	public static final String HOME_PAGE = "Home.xhtml";
 
-	private String page = MAIN_PAGE;
+	public static final String MAIN_PAGE = "MainLayout.xhtml";
+	
+	private String page = HOME_PAGE;
 
 	public String getMainPage()
 	{
@@ -32,11 +32,9 @@ public class NavigationBean {
 			return "Users.xhtml";
 		case "CheckPoints":
 			return "Check Points/CheckPoints.xhtml";
-
-		default:
-			return "Check Points/CheckPoints.xhtml";//HOME_PAGE;
 		}
-
+		
+		return HOME_PAGE;
 	}
 
 	public String getPage() {
