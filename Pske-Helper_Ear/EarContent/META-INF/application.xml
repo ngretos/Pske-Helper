@@ -7,7 +7,4 @@
       <context-root>Pske-Helper</context-root>
     </web>
   </module>
-  <module>
-    <ejb>Pske-Helper_Ejb.jar</ejb>
-  </module>
 </application>

@@ -14,18 +14,18 @@ import call.CallDataService;
 import model.checkpoints.Call;
 
 /**
- * Servlet implementation class demo
+ * Servlet implementation class CheckPointsController
  */
-@WebServlet("/demo")
-public class demo extends HttpServlet {
+@WebServlet("/checkpoints")
+public class CheckPointsController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-	private @EJB (name = "DemoBean") CallDataService dbean;
+	private @EJB (name = "CallDataService") CallDataService callsBean;
 
 	/**
      * @see HttpServlet#HttpServlet()
      */
-    public demo() {
+    public CheckPointsController() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -34,7 +34,7 @@ public class demo extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		List<Call> calls = dbean.getCalls();
+		List<Call> calls = callsBean.getCalls();
 		
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		

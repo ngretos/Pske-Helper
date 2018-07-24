@@ -3,8 +3,8 @@
 	<name>Pske-Helper_Ear</name>
 	<comment></comment>
 	<projects>
-		<project>Pske-Helper_Web</project>
 		<project>Pske-Helper_Jpa</project>
+		<project>Pske-Helper_Web</project>
 		<project>Pske-Helper_Ejb</project>
 	</projects>
 	<buildSpec>
