@@ -18,23 +18,21 @@ public class NavigationBean {
 	
 	private String page = HOME_PAGE;
 
-	public String getMainPage()
-	{
-		return MAIN_PAGE;
-	}
-
-	public String doNav(String menuId) {
+	public void doNav(String menuId) {
 		
 		switch (menuId) {
 		case "CallPhases":
-			return "CallPhases.xhtml";
+			this.page = "CallPhases.xhtml";
+			break;
 		case "Users":
-			return "Users.xhtml";
+			this.page = "Users.xhtml";
+			break;
 		case "CheckPoints":
-			return "Check Points/CheckPoints.xhtml";
+			this.page = "Check Points/CheckPoints.xhtml";
+			break;
 		}
 		
-		return HOME_PAGE;
+		this.page = HOME_PAGE;
 	}
 
 	public String getPage() {
