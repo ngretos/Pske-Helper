@@ -30,9 +30,10 @@ public class NavigationBean {
 		case "CheckPoints":
 			this.page = "Check Points/CheckPoints.xhtml";
 			break;
+		default: 
+			this.page = HOME_PAGE;
 		}
 		
-		this.page = HOME_PAGE;
 	}
 
 	public String getPage() {
